@@ -21,7 +21,6 @@ export const Nav = () => {
             <nav className="nav">
                 <NavLink to="/home" className="nav-link">Inicio</NavLink>
                 <NavLink to="/workshops" className="nav-link">Talleres</NavLink>
-                <a href="#" className="nav-link">Contacto</a>
                 <NavLink to="/login" className="nav-link">Mi Cuenta</NavLink>
             </nav>
             <div className="container">
