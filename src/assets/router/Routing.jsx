@@ -18,14 +18,15 @@ export const Routing = () => {
             <AuthProvider>
                 <Routes>
                     <Route path='/' element={<Nav />}>
+                        <Route index element={<Login />} />
                         <Route path='/register' element={<Register />} />
                         <Route path='/login' element={<Login />} />
-                        <Route path='/home' element={<Inicio/>}/>
-                        <Route path='/edit' element={<EditUser/>}/>
-                        <Route path='/workshops' element={<Talleres/>}/>
-                        <Route path='/newworkshop' element={<NewTaller/>}/>
-                        <Route path='/workshop/:id' element={<Workshop/>}/>
-                        <Route path='*' element={<h1>Pagina no encontrada 404</h1>}/>
+                        <Route path='/home' element={<Inicio />} />
+                        <Route path='/edit' element={<EditUser />} />
+                        <Route path='/workshops' element={<Talleres />} />
+                        <Route path='/newworkshop' element={<NewTaller />} />
+                        <Route path='/workshop/:id' element={<Workshop />} />
+                        <Route path='*' element={<h1>Pagina no encontrada 404</h1>} />
 
                     </Route>
                 </Routes>
