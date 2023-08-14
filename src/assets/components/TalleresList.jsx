@@ -1,7 +1,7 @@
 import React from 'react'
 import './talleres.css';
 import { useNavigate } from 'react-router-dom';
-
+import ReactTimeAgo from 'react-time-ago'
 
 export const TalleresList = ({ workshops, page, setPage }) => {
     const navegar=useNavigate();
@@ -25,7 +25,7 @@ export const TalleresList = ({ workshops, page, setPage }) => {
             {workshops.map(workshop => (
                 <div key={workshop._id} className="tarjeta" onClick={e=>HandleNavegar(e,workshop._id)}>
                     <h2>{workshop.name}</h2>
-                    <p>Fecha de Antiguedad: {workshop.create_at}</p>
+                    <p>Fecha de Antiguedad: <ReactTimeAgo date={workshop.create_at} locale='es-Es'/></p>
                     <p>Calificacion: {workshop.calification}</p>
                     <p>Encargado: {workshop.user.name}</p>
                 </div>
