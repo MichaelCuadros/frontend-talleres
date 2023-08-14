@@ -1,0 +1,33 @@
+/* Estilos generales */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 18px; /* Tamaño de letra normal */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-link:hover{
+  color:blue;
+}
+
+/* Media query para ajustar el tamaño de letra en dispositivos móviles */
+@media (max-width: 768px) {
+  .nav {
+      font-size: 14px; /* Tamaño de letra más pequeño en dispositivos móviles */
+  }
+}

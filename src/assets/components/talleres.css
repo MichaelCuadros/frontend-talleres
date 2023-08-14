@@ -1,0 +1,28 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.tarjeta {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
+.tarjeta:hover {
+    background-color: aqua;
+}
+
+@media (max-width: 768px) {
+    .tarjeta {
+        width: calc(100% - 20px);
+    }
+}
